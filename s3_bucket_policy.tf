@@ -1,6 +1,6 @@
 resource "aws_s3_bucket_policy" "s3policy" {
   depends_on = ["aws_s3_bucket.s3"]
-  bucket = "${aws_s3_bucket.s3.id}"
+  bucket     = "${aws_s3_bucket.s3.id}"
 
   policy = <<POLICY
 {
@@ -31,4 +31,3 @@ resource "aws_s3_bucket_policy" "s3policy" {
 }
 POLICY
 }
-

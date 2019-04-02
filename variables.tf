@@ -1,3 +1,7 @@
+variable "enable_log_file_validation" {
+  default = "true"
+}
+
 variable "include_global_service_events" {
   default = "true"
 }
