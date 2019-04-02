@@ -13,7 +13,7 @@ resource "aws_s3_bucket_policy" "s3policy" {
               "Service": "cloudtrail.amazonaws.com"
             },
             "Action": "s3:GetBucketAcl",
-            "Resource": "$aws_s3_bucket.s3.arn}"
+            "Resource": "${aws_s3_bucket.s3.arn}"
         },
         {
             "Sid": "AWSCloudTrailWrite",
