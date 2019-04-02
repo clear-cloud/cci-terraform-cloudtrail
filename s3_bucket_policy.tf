@@ -1,4 +1,4 @@
-resource "aws_s3_bucket_policy" "b" {
+resource "aws_s3_bucket_policy" "s3policy" {
   depends_on = ["aws_s3_bucket.s3"]
   bucket = "${aws_s3_bucket.s3.id}"
 
